@@ -11,7 +11,7 @@ def matrix_multiplication(matrix1, matrix2):
     
     for i in range(rows2):
         for j in range(cols2):
-            for k in range(rows1):
+            for k in range(cols1):
                 result[i][j] += matrix1[i][k] * matrix2[k][j]
 
     return result
